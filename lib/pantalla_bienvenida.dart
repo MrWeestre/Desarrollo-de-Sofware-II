@@ -6,7 +6,7 @@ class PantallaBienvenida extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF006A4E), // Color institucional verde
+      backgroundColor: const Color.fromARGB(255, 50, 182, 83), // Color institucional verde
       body: SafeArea(
         child: Container(
           width: double.infinity,
@@ -18,7 +18,7 @@ class PantallaBienvenida extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               Icon(
-                Icons.health_and_safety,
+                Icons.handshake,
                 size: 80,
                 color: Colors.white,
               ),
