@@ -18,11 +18,7 @@ class AppAuditoriaHigiene extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Auditoría de Higiene de Manos',
-      // Cambia la pantalla aquí para probar cada una:
-      // - PantallaEstablecimiento()
-      // - PantallaPersonal()
-      // - PantallaOportunidades()
-      home: const PantallaEstablecimiento(),
+      home: const PantallaBienvenida(),
     );
   }
 }
