@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'pantalla_bienvenida.dart';
+import 'tarjeta_momentos.dart';
 import 'pantalla_establecimiento.dart';
 import 'pantalla_personal.dart';
 import 'pantalla_oportunidades.dart';
