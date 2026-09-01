@@ -6,7 +6,7 @@ class PantallaBienvenida extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 50, 182, 83), // Color institucional verde
+      backgroundColor: const Color.fromARGB(255, 10, 88, 101), // Color institucional verde
       body: SafeArea(
         child: Container(
           width: double.infinity,
