@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'pantalla_bienvenida.dart';
-import 'tarjeta_momentos.dart';
+import 'pantalla_establecimiento.dart';
+import 'pantalla_personal.dart';
+import 'pantalla_oportunidades.dart';
+import 'oportunidad_con_error.dart';
 
 void main() {
   runApp(const AppAuditoriaHigiene());
@@ -14,12 +16,11 @@ class AppAuditoriaHigiene extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Auditoría de Higiene de Manos',
-      home: Scaffold(
-        backgroundColor: const Color(0xFF006A4E),
-        body: SafeArea(
-          child: const PantallaBienvenida(),
-        ),
-      ),
+      // Cambia la pantalla aquí para probar cada una:
+      // - PantallaEstablecimiento()
+      // - PantallaPersonal()
+      // - PantallaOportunidades()
+      home: const PantallaEstablecimiento(),
     );
   }
 }
