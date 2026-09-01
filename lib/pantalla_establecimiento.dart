@@ -7,7 +7,7 @@ class PantallaEstablecimiento extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF1EFE8),
+      backgroundColor: const Color.fromARGB(255, 89, 194, 63),
       body: SafeArea(
         child: Column(
           children: [
