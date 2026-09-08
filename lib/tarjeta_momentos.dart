@@ -33,7 +33,7 @@ class TarjetaCincoMomentos extends StatelessWidget {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF0F4C3A),
+                color: Color.fromARGB(255, 23, 208, 152),
               ),
             ),
             const SizedBox(height: 16),
