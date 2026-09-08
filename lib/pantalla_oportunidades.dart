@@ -23,26 +23,58 @@ class PantallaOportunidades extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF1EFE8),
+
       appBar: AppBar(
         backgroundColor: const Color(0xFF0F6E56),
-        title: const Text('Registro de oportunidad'),
+        title: const Text(
+          'Registro de oportunidad',
+        ),
       ),
+
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
+
           child: Column(
             children: const [
+
+              // ============================================
+              // OPORTUNIDAD 01
+              // Activa y registrada
+              // Indicador VERDE
+              // ============================================
               TarjetaOportunidad(
                 numero: 'OPORTUNIDAD 01',
                 indicaciones: _indicaciones,
                 acciones: _acciones,
                 activa: true,
+                registrada: true,
               ),
+
+              // ============================================
+              // OPORTUNIDAD 02
+              // Activa pero pendiente
+              // Indicador ROJO
+              // ============================================
               TarjetaOportunidad(
                 numero: 'OPORTUNIDAD 02',
                 indicaciones: _indicaciones,
                 acciones: _acciones,
+                activa: true,
+                registrada: false,
+              ),
+
+              // ============================================
+              // OPORTUNIDAD 03
+              // Inactiva y pendiente
+              // Texto GRIS + indicador ROJO
+              // ============================================
+              TarjetaOportunidad(
+                numero: 'OPORTUNIDAD 03',
+                indicaciones: _indicaciones,
+                acciones: _acciones,
                 activa: false,
+                registrada: false,
               ),
             ],
           ),

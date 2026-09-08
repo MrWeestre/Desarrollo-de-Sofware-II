@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'pantalla_bienvenida.dart';
-import 'tarjeta_momentos.dart';
+
 import 'pantalla_establecimiento.dart';
 import 'pantalla_personal.dart';
 import 'pantalla_oportunidades.dart';
+import 'pantalla_momentos_wrap.dart';
+import 'pantalla_resumen.dart';
 import 'oportunidad_con_error.dart';
 
 void main() {
@@ -17,8 +18,17 @@ class AppAuditoriaHigiene extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       title: 'Auditoría de Higiene de Manos',
-      home: const PantallaEstablecimiento(), //PantallaEstablecimiento, PantallaBienvenida
+
+      // ====================================================
+      // CAMBIA AQUÍ LA PANTALLA QUE QUIERAS PROBAR
+      // ====================================================
+
+      home: const PantallaResumen(
+        totalOportunidades: 10,
+        oportunidadesCorrectas: 8,
+      ),
     );
   }
 }
